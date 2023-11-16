@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <div className="w-[98%] flex-between mt-[6rem]">
+      <div className="w-[95%] flex-between mt-[6rem]">
       <TableComponent />
       <SidebarComponent />
       </div>

@@ -1,5 +1,5 @@
 .App {
-  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16;
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-10;
   background: linear-gradient(122.35deg, #fbfbfb 7.77%, #e7eae9 102.23%);
 }
 
@@ -37,4 +37,33 @@
   bottom: 7%;
   opacity: 45%;
   z-index: -999;
+}
+
+.inner-boxshadow {
+  box-shadow: rgb(204, 219, 232) 3px 3px 3px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.filter-select {
+  @apply ml-1 rounded-lg outline-none p-1 capitalize bg-[#c5751814];
+}
+
+.btn {
+  @apply rounded-[2rem] px-3 py-[5px];
+}
+
+.gradient-btn {
+  background: linear-gradient(
+    180deg,
+    rgba(24, 197, 176, 0.8),
+    rgba(46, 218, 197, 0.8)
+  );
+  box-shadow: 0 19px 22px -4px rgba(9, 187, 176, 0.39);
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.21)
+  );
+  cursor: pointer;
 }
