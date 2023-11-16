@@ -1,0 +1,40 @@
+.App {
+  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-16;
+  background: linear-gradient(122.35deg, #fbfbfb 7.77%, #e7eae9 102.23%);
+}
+
+/* Common Flex CSS */
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-start;
+}
+
+/* Common Flex CSS Ends */
+
+.nav_glass {
+  box-shadow: 1px -10px 65px 0 rgba(0, 0, 0, 0.071);
+  @apply bg-clip-padding backdrop-filter backdrop-blur-[4px] bg-opacity-25 bg-[#FCFCFC];
+}
+
+.gradient-after {
+  background: linear-gradient(
+    90.81deg,
+    #0c94e1 2%,
+    rgba(7, 214, 152, 0.22) 50.67%
+  );
+  position: absolute;
+  bottom: 7%;
+  opacity: 45%;
+  z-index: -999;
+}

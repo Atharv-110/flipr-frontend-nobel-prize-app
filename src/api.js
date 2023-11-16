@@ -1,4 +1,3 @@
-// const API_URL = '/api/v1/prize.json';
 const API_URL = 'https://api.nobelprize.org/v1/prize.json';
 
 export const fetchPrizes = async () => {
