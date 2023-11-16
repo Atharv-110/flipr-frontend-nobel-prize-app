@@ -55,7 +55,7 @@ const TableComponent = () => {
     setDisplayedRows((prevDisplayedRows) => prevDisplayedRows + 10);
   };
 
-  // Table setup
+  // Table Creation
   const columns = React.useMemo(
     () => [
       { Header: "Year", accessor: "year" },
@@ -88,7 +88,7 @@ const TableComponent = () => {
     );
 
   return (
-    <div className="w-full lg:w-[75%] border rounded-lg p-2 lg:p-4 inner-boxshadow">
+    <div className="w-full lg:w-[75%] rounded-lg p-2 lg:p-4 inner-boxshadow">
       <div className="flex justify-center flex-wrap items-center lg:justify-end py-5 px-4">
           <label className="mr-3">
             Category:

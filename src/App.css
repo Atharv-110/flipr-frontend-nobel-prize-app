@@ -23,7 +23,7 @@
 /* Common Flex CSS Ends */
 
 .nav_glass {
-  box-shadow: 1px -10px 65px 0 rgba(0, 0, 0, 0.071);
+  box-shadow: 4px -10px 65px 0 rgba(0, 0, 0, 0.071);
   @apply bg-clip-padding backdrop-filter backdrop-blur-[4px] bg-opacity-25 bg-[#FCFCFC];
 }
 
@@ -34,14 +34,14 @@
     rgba(7, 214, 152, 0.22) 50.67%
   );
   position: absolute;
-  bottom: 7%;
+  bottom: 25%;
   opacity: 45%;
   z-index: -999;
 }
 
 .inner-boxshadow {
-  box-shadow: rgb(204, 219, 232) 3px 3px 3px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: rgb(204, 219, 232) 3px 3px 10px 0px inset,
+    rgba(204, 219, 232, 0.3) -3px -3px 5px 1px inset;
 }
 
 .filter-select {
@@ -66,4 +66,11 @@
     rgba(0, 0, 0, 0.21)
   );
   cursor: pointer;
+}
+
+.gradient-text {
+  background-image: linear-gradient(90.81deg,#0c94e1 1.5%,#07d698 51.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

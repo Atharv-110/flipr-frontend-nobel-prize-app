@@ -60,12 +60,13 @@ const SidebarComponent = () => {
   }
 
   return (
-    <div className="w-[25%] hidden lg:block">
-      <h2 className="">Multiple-Time Winners</h2>
-      <ul>
+    <div className="w-[24%] rounded-lg hidden inner-boxshadow p-4 lg:block">
+      <h2 className="text-center mb-5 font-medium">Won More Than Once</h2>
+      <ul >
         {multiTimeWinners.map((winner) => (
-          <li key={`${winner.firstname} ${winner.surname}`}>
-            {`${winner.firstname} ${winner.surname} - Won ${winner.count} times`}
+          <li className="p-3 w-full bg-[#ffe1a7] flex-between mb-4 rounded-md tracking-wide font-medium"  key={`${winner.firstname} ${winner.surname}`}>
+            <p>{`${winner.firstname} ${winner.surname}`}</p>
+            <p className="bg-[#c5741849] px-2 py-1 rounded-[2rem]">{`${winner.count} times`}</p>
           </li>
         ))}
       </ul>
