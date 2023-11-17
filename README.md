@@ -1,4 +1,5 @@
-![image](https://github.com/Atharv-110/flipr-frontend-nobel-prize-app/assets/87393095/157d2698-7655-4316-bcee-b376e21ee711)
+![image](https://github.com/Atharv-110/flipr-frontend-nobel-prize-app/assets/87393095/051222c7-3efa-45a9-96f3-60ecfe95a6cc)
+
 
 # Nobel App: Frontend Task for [**Flipr.ai**](https://flipr.ai/)
 > Unveiling Brilliance, Celebrating Excellence — Your Gateway to Nobel Laureates' Legacy!
