@@ -88,42 +88,45 @@ const TableComponent = () => {
     );
 
   return (
-    <div className="w-full lg:w-[75%] rounded-lg p-2 lg:p-4 inner-boxshadow">
-      <div className="flex justify-center flex-wrap items-center lg:justify-end py-5 px-4">
-          <label className="mr-3">
-            Category:
-            <select
-              className="filter-select"
-              onChange={(e) => setSelectedCategory(e.target.value)}
-            >
-              <option value="">All</option>
-              {categories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="mr-4">
-            Year:
-            <select
-              className="filter-select"
-              onChange={(e) => setSelectedYear(e.target.value)}
-            >
-              <option value="">All</option>
-              {years.map((year) => (
-                <option key={year} value={year}>
-                  {year}
-                </option>
-              ))}
-            </select>
-          </label>
-        <button className="btn gradient-btn mt-2 lg:mt-0" onClick={handleFilterChange}>
+    <div className="w-full lg:w-[75%] rounded-lg px-2 py-5 lg:px-4 inner-boxshadow">
+      <div className="flex justify-center flex-wrap items-center lg:justify-end pb-5">
+        <label className="mr-3">
+          Category:
+          <select
+            className="filter-select"
+            onChange={(e) => setSelectedCategory(e.target.value)}
+          >
+            <option value="">All</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="mr-4">
+          Year:
+          <select
+            className="filter-select"
+            onChange={(e) => setSelectedYear(e.target.value)}
+          >
+            <option value="">All</option>
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button
+          className="btn gradient-btn mt-2 lg:mt-0"
+          onClick={handleFilterChange}
+        >
           Apply Filters
         </button>
       </div>
       <table
-        className="border-collapse rounded-md overflow-hidden"
+        className="border-collapse rounded-md overflow-hidden z-10"
         {...getTableProps()}
         style={{ width: "100%" }}
       >
@@ -165,7 +168,9 @@ const TableComponent = () => {
           })}
         </tbody>
       </table>
-      <button className="btn gradient-btn mt-4" onClick={handleLoadMore}>Load More Rows</button>
+      <button className="btn gradient-btn mt-4" onClick={handleLoadMore}>
+        Load More Rows
+      </button>
     </div>
   );
 };

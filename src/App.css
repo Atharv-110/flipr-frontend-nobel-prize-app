@@ -1,5 +1,4 @@
 .App {
-  @apply relative z-10 flex justify-center items-center flex-col mx-auto sm:px-10;
   background: linear-gradient(122.35deg, #fbfbfb 7.77%, #e7eae9 102.23%);
 }
 
@@ -23,7 +22,7 @@
 /* Common Flex CSS Ends */
 
 .nav_glass {
-  box-shadow: 4px -10px 65px 0 rgba(0, 0, 0, 0.071);
+  box-shadow: 4px -10px 65px 0 rgba(0, 0, 0, 0.1);
   @apply bg-clip-padding backdrop-filter backdrop-blur-[4px] bg-opacity-25 bg-[#FCFCFC];
 }
 
@@ -49,14 +48,14 @@
 }
 
 .btn {
-  @apply rounded-[2rem] px-3 py-[5px];
+  @apply rounded-[2rem] px-3 py-[5px] cursor-pointer;
 }
 
 .gradient-btn {
   background: linear-gradient(
     180deg,
-    rgba(24, 197, 176, 0.8),
-    rgba(46, 218, 197, 0.8)
+    rgba(24, 197, 176, 0.9),
+    rgba(46, 218, 197, 0.9)
   );
   box-shadow: 0 19px 22px -4px rgba(9, 187, 176, 0.39);
   border: 1px solid;
@@ -65,12 +64,38 @@
     transparent,
     rgba(0, 0, 0, 0.21)
   );
-  cursor: pointer;
 }
 
 .gradient-text {
-  background-image: linear-gradient(90.81deg,#0c94e1 1.5%,#07d698 51.67%);
+  background-image: linear-gradient(90.81deg, #0c94e1 1.5%, #07d698 51.67%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.gradient-full {
+  background: linear-gradient(
+    180deg,
+    rgba(24, 197, 176, 1),
+    rgba(46, 218, 197, 1)
+  );
+  box-shadow: 0 17px 20px -1px rgba(9, 187, 176, 0.4);
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.21)
+  );
+}
+
+.footer {
+  box-shadow: 4px 10px 65px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer-icon {
+  @apply flex-center p-4 w-[50px] h-[50px] gradient-btn rounded-full;
+}
+
+.footer-icon i {
+  @apply text-[1.5rem];
 }
