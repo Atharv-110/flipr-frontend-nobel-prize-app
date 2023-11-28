@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+![image](https://github.com/Atharv-110/flipr-frontend-nobel-prize-app/assets/87393095/051222c7-3efa-45a9-96f3-60ecfe95a6cc)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Nobel App: Frontend Task for [**Flipr.ai**](https://flipr.ai/)
+> Unveiling Brilliance, Celebrating Excellence — Your Gateway to Nobel Laureates' Legacy!
 
-In the project directory, you can run:
+The "Nobel App" retrieves data about all Nobel Prize winners together with year, category and laureates' names from the Nobel Prize Winners API in a Tabular Form.
+### Deployment: [Link](https://flipr-frontend-nobel-prize-app.vercel.app/) (All the tasks below can be tested here.)
 
-### `npm start`
+## Tech Stack:
+[![My Skills](https://skills.thijs.gg/icons?i=react,tailwind,materialui,css&theme=light&perline=6)](https://skills.thijs.gg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tasks Completed:
+- [x] Write a function to fetch prizes from the url. [Check Code here](https://github.com/Atharv-110/flipr-frontend-nobel-prize-app/blob/main/src/api.js)
+- [x] Showcase the prize winners in a list. You can decide the layout and style. You have to display each prize and who has won that prize.
+- [x] You should add a dropdown to filter prizes by category and year.
+- [x] Year should be between 1900 - 2018, you can find out the category yourself by iterating over the data.
+- [x] There are 4 people who have won the Nobel prize more than 1 time. You have to make a section in the app to display their information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features:
+- Load More Rows: This will not load all the data at once, only 10 rows at once will load and we can load more rows through **Load More Rows Button**
+- Fully Mobile Responsive.
+- **> 1 Button** in Mobile View: This will showcase *Task no. 5* in the *Mobile View*.
+- Minimal UI for better User Experience. UI inspiration: [**Flipr.ai**](https://flipr.ai/)
+- Handled the missing values through logic, eg: There were many Laureates with only Firstname and no Surname. It was showing undefined on the app so handled it via ternary operators.
+- Implemented all the basic UI elements such as Navbar, Hero Section, Footer, Modal, etc.
